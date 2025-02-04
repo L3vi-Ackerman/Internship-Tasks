@@ -1,0 +1,11 @@
+Date: February 3, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Linux Fundamentals & File System
+
+Details:
+ - Learned Linux Basics
+ - Knowledge acquisition of Owner, Group and Permissions in Linux
+ - Linux File System
+ - Setup Kali Linux
