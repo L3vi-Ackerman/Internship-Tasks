@@ -1,0 +1,53 @@
+Date: February 3, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Linux Fundamentals & File System
+
+Details:
+ - Learned Linux Basics
+ - Knowledge acquisition of Owner, Group and Permissions in Linux
+ - Linux File System
+ - Setup Kali Linux
+ __________________________________________________________________________________
+ 
+ Date: February 4, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Shell Scripting
+
+Details:
+ - Conditional Statements in Shell Scripting
+ - Knowledge of awk command in Linux
+ - practical implementation of owner transfer using chown
+ - Writing in files using echo
+ _____________________________________________________________________________________
+ 
+ Date: February 5, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Cronjob, Crontab in Linux & Basics of HTML & CSS
+
+Details:
+ - Learning Cronjob and Crontab in Linux
+ - Scheduling top 5 heavy tasks in every 5 minutes using Crontab
+ - Semantic HTML tags
+ - CSS selectors and transitions
+ - Creation of simple website using HTML & CSS
+ _______________________________________________________________________________________
+ 
+Date: February 6, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Higher Order Functions in JS, Basics of Typescript
+
+Details:
+ - DOM manipulation using JavaScript
+ - Learned Higher Order Functions such as map(), reduce(), filter()
+ - Practical implementation of the higher order functions in a website
+ - Basics of TypeScript and defining types for props in React
+_________________________________________________________________________________________
+ 
