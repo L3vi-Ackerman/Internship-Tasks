@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  padding: 0.8vw;
+  border-radius: 8px;
+  font-size: 1vw;
+  margin-bottom: 20px;
+}
+caption,
+h5 {
+  padding: 1.5vw;
+  font-size: 1.5vw;
+}
+.margin-bottom {
+  margin-bottom: 0.8vw;
+}
+label {
+  position: relative;
+  right: 75px;
+  font-size: 1vw;
+}
+button {
+  border-radius: 8px;
+  color: black;
+  background-color: coral;
+  font-size: 1vw;
+  padding: 0.8vw 2.4vw;
+}
+#display-result {
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 100px;
+  width: 300px;
+  display: none;
+}
+table {
+  width: 60%;
+}
+tr,
+th,
+td {
+  /* border: 1px solid black; */
+  border: 1px solid black;
+  padding: 0.8vw 1.6vw;
+}
+
+#sort-ascending,
+#sort-descending {
+  color: white;
+  background-color: green;
+}
