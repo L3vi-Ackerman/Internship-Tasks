@@ -60,7 +60,7 @@ Training: Setting up SSH key, Concurrency model in JS, Fetching API and creating
 Details:
  - Setting up multiple SSH keys
  - Call Stack, Event Loop, Callback Queue, Microtask Queue in JS
+ - Generic Type (T) in TypeScript
  - type vs interface in TypeScript
  - fetching data from APIs like JSONBin 
- 
  ___________________________________________________________________________________________
