@@ -51,3 +51,16 @@ Details:
  - Basics of TypeScript and defining types for props in React
 _________________________________________________________________________________________
  
+ Date: February 7, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Setting up SSH key, Concurrency model in JS, Fetching API and creating API using JSONbin
+
+Details:
+ - Setting up multiple SSH keys
+ - Call Stack, Event Loop, Callback Queue, Microtask Queue in JS
+ - type vs interface in TypeScript
+ - fetching data from APIs like JSONBin 
+ 
+ ___________________________________________________________________________________________
