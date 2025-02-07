@@ -15,6 +15,44 @@ const addRow = (data) => {
   messageCell.textContent = data.message;
 };
 
+// Function to display data in the table
+const displayData = (data) => {
+  const tableBody = document.getElementById("dataTable");
+
+  // Loop through the data and add rows
+  data.forEach((item) => {
+    const row = tableBody.insertRow();
+
+    const firstNameCell = row.insertCell(0);
+    const lastNameCell = row.insertCell(1);
+    const messageCell = row.insertCell(2);
+
+    firstNameCell.textContent = item.firstname;
+    lastNameCell.textContent = item.lastname;
+    messageCell.textContent = item.message;
+  });
+};
+
+// Function to fetch data from the API
+const fetchData = () => {
+  fetch(url, {
+    method: "GET",
+    headers: {
+      "X-Master-Key": apiKey,
+    },
+  })
+    .then((response) => response.json())
+    .then((json) => {
+      console.log("Fetched data:", json);
+      // Assuming the data is stored in the `record` field
+      displayData(json.record);
+    })
+    .catch((error) => console.error("Error:", error));
+};
+
+// Fetch data on page load
+window.onload = fetchData;
+
 const submitForm = (e) => {
   e.preventDefault();
   const firstNameField = document.getElementById("firstname").value;
