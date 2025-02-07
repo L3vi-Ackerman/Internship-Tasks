@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-div">
+        <h3>Enter your details below!</h3>
+        <form action="" id="myForm">
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Enter your username"
+          />
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Enter your lastname"
+          />
+          <textarea
+            name="message"
+            id="message"
+            class="message"
+            cols="40"
+            rows="10"
+            placeholder="Enter your message here..."
+          ></textarea>
+          <button type="submit">Submit Form</button>
+        </form>
+      </div>
+      <div class="display-div">
+        <table>
+          <thead>
+            <tr>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Message</th>
+            </tr>
+          </thead>
+          <tbody id="dataTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
