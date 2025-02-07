@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h5>Enter products and Quantity</h5>
+      <div class="input-div">
+        <input
+        type="text"
+        name="product"
+        id="product"
+        required
+        placeholder="Enter the product name"
+      />
+
+      <input
+        type="text"
+        name="quantity"
+        id="quantity"
+        required
+        placeholder="Enter quantity"
+      />
+      <button id="btn" class="btn" onclick="addProduct()">Add Product</button>
+      </div>
+      
+     
+      <table id="productTable">
+        <caption>
+          Available Products
+        </caption>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+          </tr>
+          <tbody id="productData">
+
+          </tbody>
+        </thead>
+        <tbody id="employee-data"></tbody>
+      </table>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
