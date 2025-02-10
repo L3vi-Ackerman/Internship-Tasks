@@ -64,3 +64,15 @@ Details:
  - type vs interface in TypeScript
  - fetching data from APIs like JSONBin 
  ___________________________________________________________________________________________
+  
+ Date: February 10, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Form validation using JS, Class components in React, lifecycle methods in React
+
+Details:
+ - Form validation using JS
+ - State management & Lifecycle methods in React
+ - useState, useEffect and useContext hooks in React
+ ______________________________________________________________________________________________
