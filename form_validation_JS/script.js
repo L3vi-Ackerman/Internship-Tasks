@@ -1,4 +1,19 @@
 import { nepal_location } from "./nepal_location.js";
+
+function validateName(name) {
+  let isValidUsername = true;
+  for (let i = 0; i < name.length; ++i) {
+    let ch = name.charCodeAt(i);
+    if (
+      !(ch >= 65 && ch <= 90) && // A-Z
+      !(ch >= 97 && ch <= 122) // a-z
+    ) {
+      isValidUsername = false;
+      break;
+    }
+  }
+  return isValidUsername;
+}
 document.addEventListener("DOMContentLoaded", () => {
   const province = document.querySelector("#province");
   const district = document.querySelector("#district");
@@ -82,6 +97,8 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   const fullName = firstName + " " + lastName;
 
   //boolean variables to check validation
+  let isValidFirstName = true;
+  let isValidLastName = true;
   let isValidUsername = true;
   var isValidFile = false;
   var allowedExtension = ["jpeg", "jpg"];
@@ -90,32 +107,12 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   var fileExtension = fileInput.value.split(".").pop().toLowerCase();
 
   //check if firstname contains special characters
-  for (let i = 0; i < firstName.length; ++i) {
-    let ch = firstName.charCodeAt(i);
-    if (
-      !(ch >= 65 && ch <= 90) && // A-Z
-      !(ch >= 97 && ch <= 122) && // a-z
-      !(ch >= 48 && ch <= 57) // 0-9
-    ) {
-      isValidUsername = false;
-      break;
-    }
-  }
+  isValidFirstName = validateName(firstName);
 
   // check if lastname contains special characters
-  for (let i = 0; i < lastName.length; ++i) {
-    let ch = lastName.charCodeAt(i);
-    // console.log(ch);
-    if (
-      !(ch >= 65 && ch <= 90) && // A-Z
-      !(ch >= 97 && ch <= 122) && // a-z
-      !(ch >= 48 && ch <= 57) // 0-9
-    ) {
-      isValidUsername = false;
-      break;
-    }
-  }
+  isValidLastName = validateName(lastName);
 
+  isValidUsername = isValidFirstName && isValidLastName;
   const selectedCourses = [];
   //store the selected courses in the array
   checkboxes.forEach((checkbox) => {
