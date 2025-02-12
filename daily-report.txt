@@ -76,3 +76,15 @@ Details:
  - State management & Lifecycle methods in React
  - useState, useEffect and useContext hooks in React
  ______________________________________________________________________________________________
+ 
+  Date: February 12, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Form Validation, Todo App using React, Shadcn setup
+
+Details:
+ - Form validation code optimization
+ - Todo App using React 
+ - Shadcn setup
+ ______________________________________________________________________________________________
