@@ -1,184 +1,115 @@
 import { nepal_location } from "./nepal_location.js";
-
-function validateName(name) {
-  let isValidUsername = true;
-  for (let i = 0; i < name.length; ++i) {
-    let ch = name.charCodeAt(i);
-    if (
-      !(ch >= 65 && ch <= 90) && // A-Z
-      !(ch >= 97 && ch <= 122) // a-z
-    ) {
-      isValidUsername = false;
-      break;
-    }
-  }
-  return isValidUsername;
-}
+import { DisplayError } from "./Validation/DisplayError.js";
+import { NameValidation } from "./Validation/NameValidation.js";
+import { Address } from "./Components/Address.js";
+import { FileValidation } from "./Validation/FileValidation.js";
 document.addEventListener("DOMContentLoaded", () => {
   const province = document.querySelector("#province");
   const district = document.querySelector("#district");
   const municipality = document.querySelector("#municipality");
 
-  //display names of Province from nepal_location.js
-  nepal_location.provinceList.forEach((prov) => {
-    const option = document.createElement("option");
-    option.value = prov.name;
-    option.textContent = prov.name;
-    province.appendChild(option);
-  });
+  const getAddress = new Address(province, district, municipality);
+  // display list of province
+  getAddress.displayProvinceList();
 
-  // Update District Dropdown based on selected Province
-  function updateDistrict() {
-    // Clear previous options
-    district.innerHTML = '<option value="">Select District</option>';
-    // Clear municipalities
-    municipality.innerHTML = '<option value="">Select Municipality</option>';
-
-    // check the availability of the province in the nepal_location.js based on the selected province
-    let selectedProvince = province.value;
-    let prov = nepal_location.provinceList.find(
-      (p) => p.name === selectedProvince
-    );
-
-    // display list of districts of that respective only if the prov==true
-    if (prov) {
-      prov.districtList.forEach((dist) => {
-        const option = document.createElement("option");
-        option.value = dist.name;
-        option.textContent = dist.name;
-        district.appendChild(option);
-      });
-    }
-  }
-
-  // Update Municipality Dropdown based on selected District
-  function updateMunicipality() {
-    municipality.innerHTML = '<option value="">Select Municipality</option>'; // Clear previous options
-
-    // check te availability of the district
-    let selectedDistrict = district.value;
-    for (let i = 0; i < nepal_location.provinceList.length; i++) {
-      let dist = nepal_location.provinceList[i].districtList.find(
-        (d) => d.name === selectedDistrict
-      );
-
-      //if district is found, display list of municipalities
-      if (dist) {
-        dist.municipalityList.forEach((mun) => {
-          const option = document.createElement("option");
-          option.value = mun.name;
-          option.textContent = mun.name;
-          municipality.appendChild(option);
-        });
-      }
-    }
-  }
-
-  province.addEventListener("change", updateDistrict);
-  district.addEventListener("change", updateMunicipality);
+  // display list of districts when province list is changed
+  province.addEventListener("change", () => getAddress.updateDistrict());
+  // display list of municipalities when district list is changed
+  district.addEventListener("change", () => getAddress.updateMunicipality());
 });
 
 // Event to be triggered when the form is submitted
 document.getElementById("myForm").addEventListener("submit", function (event) {
-  //prevent refreshing of the page
+  // prevent reload of the page
   event.preventDefault();
 
-  //get the values from the input field
   let firstName = document.getElementById("firstname").value;
   let lastName = document.getElementById("lastname").value;
   let dob = document.getElementById("DOB").value;
   let email = document.getElementById("email").value;
   let gender = document.querySelector('input[name="gender"]:checked').value;
-  let selectedProvince = province.value;
-  let selectedDistrict = district.value;
-  let selectedMunicipality = municipality.value;
-  var fileInput = document.getElementById("uploadPicture");
+  let selectedProvince = document.querySelector("#province").value;
+  let selectedDistrict = document.querySelector("#district").value;
+  let selectedMunicipality = document.querySelector("#municipality").value;
+  let fileInput = document.getElementById("uploadPicture");
   const checkboxes = document.querySelectorAll('input[name="course"]:checked');
-  const fullName = firstName + " " + lastName;
 
-  //boolean variables to check validation
-  let isValidFirstName = true;
-  let isValidLastName = true;
-  let isValidUsername = true;
-  var isValidFile = false;
-  var allowedExtension = ["jpeg", "jpg"];
+  // boolean vars to check for invalid inputs
+  let isValidFirstName = new NameValidation(firstName).validateName();
+  let isValidLastName = new NameValidation(lastName).validateName();
+  let isValidUsername = isValidFirstName && isValidLastName;
 
-  //get the uploaded files extensions
-  var fileExtension = fileInput.value.split(".").pop().toLowerCase();
-
-  //check if firstname contains special characters
-  isValidFirstName = validateName(firstName);
-
-  // check if lastname contains special characters
-  isValidLastName = validateName(lastName);
-
-  isValidUsername = isValidFirstName && isValidLastName;
-  const selectedCourses = [];
-  //store the selected courses in the array
+  let selectedCourses = [];
   checkboxes.forEach((checkbox) => {
     selectedCourses.push(checkbox.value);
   });
 
-  //check is the extension of the uploaded file is equal to the extension stored is the array
-  for (var index in allowedExtension) {
-    if (fileExtension === allowedExtension[index]) {
-      isValidFile = true;
-      break;
-    }
-  }
+  // create instance of the FileValidation class
+  let fileValidator = new FileValidation(fileInput);
 
-  //   if username contains special characters
-  if (!isValidUsername) {
-    alert("Name should not contain special characters");
+  // check if the uploaded file is image or not
+  let isValidFile = fileValidator.validateFileExtension();
+
+  // check if the uploaded image is of size < 4 MB
+  let isValidFileSize = fileValidator.validateFileSize();
+
+  // true only when all booleans are true
+  let formValid = isValidUsername && isValidFile && isValidFileSize;
+
+  if (!formValid) {
+    if (!isValidUsername) {
+      new DisplayError(
+        "firstNameError",
+        "Name contains special characters!"
+      ).displayError();
+    }
+
+    if (!isValidFile) {
+      new DisplayError(
+        "imageExtensionError",
+        "Uploaded file is not an image!"
+      ).displayError();
+    }
+
+    if (!isValidFileSize) {
+      new DisplayError(
+        "imageExtensionError",
+        "Image size must be less than 4 MB!"
+      ).displayError();
+    }
+
     return;
   }
-  //   if uploaded file is not an image
-  if (!isValidFile) {
-    alert("Uploading files other than images is not allowed!");
-    eturn;
-  } else {
-    //   compute the size of the uploaded image
-    if (fileInput.files.length > 0) {
-      for (let i = 0; i <= fileInput.files.length - 1; i++) {
-        const fsize = fileInput.files.item(i).size;
-        let file = Math.round(fsize / 1024);
-        // if size of the file > 4MB display error
-        if (file >= 4096) {
-          alert("File too Big, please select a file less than 4mb");
-          return;
-        }
-      }
-    }
-    // Append data to table
-    const tableBody = document.getElementById("displayInformation");
-    const row = document.createElement("tr");
 
-    row.innerHTML = `
-        <td>${fullName}</td>
-        <td>${email}</td>
-        <td>${dob}</td>
-        <td>${gender}</td>
-        <td>${selectedCourses.join(", ")}</td>
-        <td>${selectedProvince}</td>
-        <td>${selectedDistrict}</td>
-        <td>${selectedMunicipality}</td>
-      `;
-    tableBody.appendChild(row);
+  // Append Data to Table
+  const tableBody = document.getElementById("displayInformation");
+  tableBody.innerText = "";
+  const row = document.createElement("tr");
 
-    // display the uploaded image
-    let file = fileInput.files[0];
-    if (file) {
-      let reader = new FileReader();
-      reader.onload = function (event) {
-        let base64String = event.target.result;
-        document.getElementById("previewImage").src = base64String;
-        document.getElementById("previewImage").style.display = "block";
-      };
-      reader.readAsDataURL(file);
-    }
+  row.innerHTML = `
+      <td>${fullName}</td>
+      <td>${email}</td>
+      <td>${dob}</td>
+      <td>${gender}</td>
+      <td>${selectedCourses.join(", ")}</td>
+      <td>${selectedProvince}</td>
+      <td>${selectedDistrict}</td>
+      <td>${selectedMunicipality}</td>
+    `;
+  tableBody.appendChild(row);
 
+  // Display Uploaded Image
+  let file = fileInput.files[0];
+  if (file) {
+    let reader = new FileReader();
+    reader.onload = function (event) {
+      document.getElementById("previewImage").src = event.target.result;
+      document.getElementById("previewImage").style.display = "block";
+    };
     reader.readAsDataURL(file);
-    // reset form
-    document.getElementById("myForm").reset();
   }
+
+  document.getElementById("myForm").reset();
+  document.querySelector(".error-display").style.display = "none";
+  // window.location.reload();
 });

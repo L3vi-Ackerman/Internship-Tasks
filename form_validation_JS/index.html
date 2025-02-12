@@ -30,8 +30,8 @@
               required
               placeholder="Enter your lastname"
             />
+            <div class="error-display firstNameError"></div>
           </div>
-
           <div class="email">
             <label for="email">E-mail:</label>
             <input
@@ -41,7 +41,7 @@
               placeholder="Enter your email address"
             />
           </div>
-
+          <div class="error-display emailError"></div>
           <div class="dob">
             <label for="DOB">Date of Birth (A.D):</label>
             <input
@@ -52,7 +52,7 @@
               max="2025-12-31"
             />
           </div>
-
+          <div class="error-display"></div>
           <div class="gender-container">
             <label>Gender:</label>
 
@@ -113,6 +113,7 @@
             ></label
           >
           <input type="file" id="uploadPicture" name="filename" />
+          <div class="error-display imageSizeError imageExtensionError"></div>
           <input type="submit" value="Submit" />
         </form>
       </div>
