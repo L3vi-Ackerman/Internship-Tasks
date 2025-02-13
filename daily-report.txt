@@ -77,7 +77,7 @@ Details:
  - useState, useEffect and useContext hooks in React
  ______________________________________________________________________________________________
  
-  Date: February 12, 2025
+Date: February 12, 2025
 
 Trainee: Biplav Raj Chitrakar
 
@@ -87,4 +87,16 @@ Details:
  - Form validation code optimization
  - Todo App using React 
  - Shadcn setup
+ ______________________________________________________________________________________________
+ 
+Date: February 13, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Tailwind CSS & Basic concept of Next.js
+
+Details:
+ - Portfolio Website using React and Tailwind CSS
+ - Server Side Rendering and Client Side Rendering in Next.js
+ - App Router & Caching in Next.js
  ______________________________________________________________________________________________
