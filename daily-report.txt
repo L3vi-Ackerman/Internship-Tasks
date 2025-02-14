@@ -100,3 +100,16 @@ Details:
  - Server Side Rendering and Client Side Rendering in Next.js
  - App Router & Caching in Next.js
  ______________________________________________________________________________________________
+ 
+Date: February 14, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Concepts of Next.js and Implementation of Shadcn in Next.js Project
+
+Details:
+ - Concept of Streaming in Next.js
+ - Next.js APIs: useSearchParams, usePathname and useRouter
+ - Partial Prerendering
+ - Conditional ClassName assignment using clsx in Tailwindcss
+ ______________________________________________________________________________________________
