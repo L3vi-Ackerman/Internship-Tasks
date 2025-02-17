@@ -113,3 +113,14 @@ Details:
  - Partial Prerendering
  - Conditional ClassName assignment using clsx in Tailwindcss
  ______________________________________________________________________________________________
+ 
+ Date: February 17, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Next.js Projects
+
+Details:
+ - Expense Tracker dashboard using Next.js
+ - Multi Step Form using Next.js
+ ________________________________________________________________________________________________
