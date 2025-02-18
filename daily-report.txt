@@ -114,7 +114,7 @@ Details:
  - Conditional ClassName assignment using clsx in Tailwindcss
  ______________________________________________________________________________________________
  
- Date: February 17, 2025
+Date: February 17, 2025
 
 Trainee: Biplav Raj Chitrakar
 
@@ -123,4 +123,16 @@ Training: Next.js Projects
 Details:
  - Expense Tracker dashboard using Next.js
  - Multi Step Form using Next.js
+ ________________________________________________________________________________________________
+ 
+Date: February 18, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Next.js Collaboration project
+
+Details:
+ - Discussion over the project with team members
+ - Blog Post UI - collaborative project
+ - Hydration and Hydration Error in Next.js
  ________________________________________________________________________________________________
