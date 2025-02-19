@@ -136,3 +136,16 @@ Details:
  - Blog Post UI - collaborative project
  - Hydration and Hydration Error in Next.js
  ________________________________________________________________________________________________
+
+ 
+Date: February 19, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Next.js Authentication and Authorization
+
+Details:
+ - Learned concepts of token, session and cookies
+ - Implementation of Next.js Authentication in Collaborative Project
+ - Creation of Blog Post UI - details page 
+ ________________________________________________________________________________________________
