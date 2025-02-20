@@ -149,3 +149,15 @@ Details:
  - Implementation of Next.js Authentication in Collaborative Project
  - Creation of Blog Post UI - details page 
  ________________________________________________________________________________________________
+
+ 
+Date: February 20, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: React JS Fundamentals & Next.js Project
+
+Details:
+ - TanStack Query: Concept of Queries and Mutation using useQuery() & useMutation()
+ - React Redux: Store, Provider, Actions, Dispatch 
+ - Collaborative Project using Next.js
