@@ -1,0 +1,300 @@
+{
+  "budget": {
+    "totalBudget": 3000,
+    "remainingBudget": 1045
+  },
+  "monthlyReport": [
+    {
+      "id": "1",
+      "month": "January",
+      "income": 186,
+      "expense": 80
+    },
+    {
+      "id": "2",
+      "month": "February",
+      "income": 305,
+      "expense": 200
+    },
+    {
+      "id": "3",
+      "month": "March",
+      "income": 237,
+      "expense": 120
+    },
+    {
+      "id": "4",
+      "month": "April",
+      "income": 73,
+      "expense": 190
+    },
+    {
+      "id": "5",
+      "month": "May",
+      "income": 209,
+      "expense": 130
+    },
+    {
+      "id": "6",
+      "month": "June",
+      "income": 214,
+      "expense": 140
+    }
+  ],
+  "categoriesList": [
+    {
+      "id": "1",
+      "name": "Food",
+      "spent": 100
+    },
+    {
+      "id": "2",
+      "name": "Bills",
+      "spent": 100
+    },
+    {
+      "id": "3",
+      "name": "Rent",
+      "spent": 100
+    },
+    {
+      "id": "4",
+      "name": "Transportation",
+      "spent": 100
+    },
+    {
+      "id": "5",
+      "name": "Entertainment",
+      "spent": 100
+    },
+    {
+      "id": "6",
+      "name": "Savings",
+      "spent": 100
+    },
+    {
+      "id": "7",
+      "name": "Investment",
+      "spent": 100
+    },
+    {
+      "id": "8",
+      "name": "Health",
+      "spent": 100
+    }
+  ],
+  "transactions": [
+    {
+      "invoice": "INV001",
+      "description": "Grocery Shopping",
+      "amount": 250,
+      "category": "Food",
+      "date": "2025-02-16",
+      "type": "Expense",
+      "paymentStatus": "Success",
+      "paymentMethod": "Credit Card",
+      "id": "eb38"
+    },
+    {
+      "invoice": "INV002",
+      "description": "Freelance Payment",
+      "amount": 150,
+      "category": "Income",
+      "date": "2025-02-15",
+      "type": "Income",
+      "paymentStatus": "Success",
+      "paymentMethod": "Bank Transfer",
+      "id": "c0f8"
+    },
+    {
+      "invoice": "INV003",
+      "description": "Internet Bill",
+      "amount": 350,
+      "category": "Bills",
+      "date": "2025-02-14",
+      "type": "Expense",
+      "paymentStatus": "Success",
+      "paymentMethod": "Debit Card",
+      "id": "0a0c"
+    },
+    {
+      "invoice": "INV012",
+      "description": "Bought Keyboard",
+      "amount": 300,
+      "category": "Device",
+      "date": "2025-02-13",
+      "type": "Expense",
+      "paymentStatus": "Success",
+      "paymentMethod": "Credit Card",
+      "id": "b0fe"
+    },
+    {
+      "invoice": "INV011",
+      "description": "Bought Keyboard",
+      "amount": 300,
+      "category": "Device",
+      "date": "2025-02-13",
+      "type": "Expense",
+      "paymentStatus": "Success",
+      "paymentMethod": "Credit Card",
+      "id": "7f00"
+    },
+    {
+      "invoice": "INV005",
+      "category": "Income",
+      "type": "Income",
+      "amount": 1000,
+      "description": "Salary",
+      "paymentStatus": "Paid",
+      "paymentMethod": "Bank Transfer",
+      "date": "2025-02-16",
+      "id": "f892"
+    },
+    {
+      "invoice": "INV016",
+      "category": "FOOD",
+      "type": "Income",
+      "amount": 50,
+      "description": "Lunch",
+      "paymentStatus": "Paid",
+      "paymentMethod": "Cash",
+      "date": "2025-02-17",
+      "id": "0ab5"
+    },
+    {
+      "id": "c4f6",
+      "invoice": "INV018",
+      "description": "Shopping",
+      "amount": 100,
+      "category": "Shopping",
+      "date": "2025-02-19",
+      "type": "Expense",
+      "paymentStatus": "Paid",
+      "paymentMethod": "Credit Card"
+    },
+    {
+      "id": "3a3a",
+      "invoice": "INV019",
+      "description": "Clothes",
+      "amount": 500,
+      "category": "Shopping",
+      "date": "2025-02-19",
+      "type": "Expense",
+      "paymentStatus": "",
+      "paymentMethod": "Cash"
+    },
+    {
+      "id": "a4d2",
+      "invoice": "INV020",
+      "description": "Bought Books",
+      "amount": 20,
+      "category": "Education",
+      "date": "2025-02-20",
+      "type": "Expense",
+      "paymentStatus": "",
+      "paymentMethod": "cash"
+    },
+    {
+      "id": "9adc",
+      "invoice": "INV021",
+      "description": "Health",
+      "amount": 200,
+      "category": "Health",
+      "date": "2025-02-20",
+      "type": "Expense",
+      "paymentStatus": "",
+      "paymentMethod": "Cash"
+    },
+    {
+      "id": "4dc5",
+      "invoice": "INV022",
+      "description": "Health",
+      "amount": 100,
+      "category": "Health",
+      "date": "",
+      "type": "Expense",
+      "paymentStatus": "",
+      "paymentMethod": "Cash"
+    },
+    {
+      "id": "f262",
+      "invoice": "INV023",
+      "description": "Food",
+      "amount": 100,
+      "category": "Food",
+      "type": "Expense",
+      "paymentStatus": "",
+      "paymentMethod": "Cash"
+    },
+    {
+      "id": "3b2f",
+      "invoice": "INV024",
+      "description": "Food",
+      "amount": 100,
+      "category": "Food",
+      "type": "Expense",
+      "paymentStatus": "",
+      "paymentMethod": "Cash"
+    },
+    {
+      "id": "7fd6",
+      "invoice": "INV025",
+      "description": "Salary",
+      "amount": 1000,
+      "category": "Income",
+      "type": "Income",
+      "paymentStatus": "",
+      "paymentMethod": "Bank Transfer"
+    },
+    {
+      "id": "01bd",
+      "invoice": "INV026",
+      "description": "Gathering",
+      "amount": 500,
+      "category": "Food",
+      "type": "Expense",
+      "paymentStatus": "",
+      "paymentMethod": "Bank Transfer"
+    },
+    {
+      "id": "6651",
+      "invoice": "INV027",
+      "description": "laksdf",
+      "amount": 100,
+      "category": "lkajsdf",
+      "type": "Expense",
+      "paymentStatus": "",
+      "paymentMethod": "asdkjf"
+    },
+    {
+      "id": "7a0e",
+      "invoice": "INV028",
+      "description": "klasdjf",
+      "amount": 100,
+      "category": "lkfasldf",
+      "type": "Expense",
+      "paymentStatus": "",
+      "paymentMethod": "lasjdf"
+    },
+    {
+      "id": "5975",
+      "invoice": "INV029",
+      "description": "lasdfjkl",
+      "amount": 100,
+      "category": "asldf;",
+      "type": "Expense",
+      "paymentStatus": "",
+      "paymentMethod": "klasdjf"
+    },
+    {
+      "id": "e516",
+      "invoice": "INV030",
+      "description": "klasdf",
+      "amount": 1000,
+      "category": "aklsjf",
+      "type": "Income",
+      "paymentStatus": "",
+      "paymentMethod": "lasdf"
+    }
+  ]
+}

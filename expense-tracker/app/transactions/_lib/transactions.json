@@ -1,0 +1,74 @@
+{
+  "transactions": [
+    {
+      "invoice": "INV001",
+      "description": "Grocery Shopping",
+      "amount": 250,
+      "category": "Food",
+      "date": "2025-02-16",
+      "type": "Expense",
+      "paymentStatus": "Success",
+      "paymentMethod": "Credit Card"
+    },
+    {
+      "invoice": "INV002",
+      "description": "Freelance Payment",
+      "amount": 150,
+      "category": "Income",
+      "date": "2025-02-15",
+      "type": "Income",
+      "paymentStatus": "Success",
+      "paymentMethod": "Bank Transfer"
+    },
+    {
+      "invoice": "INV003",
+      "description": "Internet Bill",
+      "amount": 350,
+      "category": "Bills",
+      "date": "2025-02-14",
+      "type": "Expense",
+      "paymentStatus": "Success",
+      "paymentMethod": "Debit Card"
+    },
+    {
+      "invoice": "INV011",
+      "description": "Bought Keyboard",
+      "amount": 300,
+      "category": "Device",
+      "date": "2025-02-13",
+      "type": "Expense",
+      "paymentStatus": "Success",
+      "paymentMethod": "Credit Card"
+    },
+    {
+      "invoice": "INV011",
+      "description": "Bought Keyboard",
+      "amount": 300,
+      "category": "Device",
+      "date": "2025-02-13",
+      "type": "Expense",
+      "paymentStatus": "Success",
+      "paymentMethod": "Credit Card"
+    },
+    {
+      "invoice": "INV005",
+      "category": "Income",
+      "type": "Income",
+      "amount": 1000,
+      "description": "Salary",
+      "paymentStatus": "Paid",
+      "paymentMethod": "Bank Transfer",
+      "date": "2025-02-16"
+    },
+    {
+      "invoice": "INV016",
+      "category": "FOOD",
+      "type": "Income",
+      "amount": 50,
+      "description": "Lunch",
+      "paymentStatus": "Paid",
+      "paymentMethod": "Cash",
+      "date": "2025-02-17"
+    }
+  ]
+}

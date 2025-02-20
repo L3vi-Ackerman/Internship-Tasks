@@ -1,0 +1,65 @@
+{
+  "budget": {
+    "totalBudget": 3000,
+    "remainingBudget": 1045,
+    "categories": {
+      "Food": {
+        "allocated": 800,
+        "spent": 725,
+        "remaining": 75,
+        "thresholdAlert": false
+      },
+      "Bills": {
+        "allocated": 600,
+        "spent": 450,
+        "remaining": 150,
+        "thresholdAlert": false
+      },
+      "Device": {
+        "allocated": 500,
+        "spent": 400,
+        "remaining": 100,
+        "thresholdAlert": false
+      },
+      "Income": {
+        "earned": 2000
+      },
+      "Entertainment": {
+        "allocated": 700,
+        "spent": 500,
+        "remaining": 200,
+        "thresholdAlert": false
+      },
+      "Transport": {
+        "allocated": 400,
+        "spent": 350,
+        "remaining": 50,
+        "thresholdAlert": true
+      },
+      "Shopping": {
+        "allocated": 750,
+        "spent": 600,
+        "remaining": 150,
+        "thresholdAlert": false
+      },
+      "Healthcare": {
+        "allocated": 450,
+        "spent": 300,
+        "remaining": 150,
+        "thresholdAlert": false
+      },
+      "Education": {
+        "allocated": 600,
+        "spent": 500,
+        "remaining": 100,
+        "thresholdAlert": false
+      },
+      "Savings": {
+        "allocated": 1200,
+        "spent": 0,
+        "remaining": 1200,
+        "thresholdAlert": false
+      }
+    }
+  }
+}

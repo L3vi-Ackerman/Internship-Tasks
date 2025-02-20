@@ -1,0 +1,40 @@
+{
+  "monthlyReport": [
+    {
+      "id": "1",
+      "month": "January",
+      "income": 186,
+      "expense": 80
+    },
+    {
+      "id": "2",
+      "month": "February",
+      "income": 305,
+      "expense": 200
+    },
+    {
+      "id": "3",
+      "month": "March",
+      "income": 237,
+      "expense": 120
+    },
+    {
+      "id": "4",
+      "month": "April",
+      "income": 73,
+      "expense": 190
+    },
+    {
+      "id": "5",
+      "month": "May",
+      "income": 209,
+      "expense": 130
+    },
+    {
+      "id": "6",
+      "month": "June",
+      "income": 214,
+      "expense": 140
+    }
+  ]
+}
