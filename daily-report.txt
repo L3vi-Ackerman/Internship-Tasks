@@ -161,3 +161,17 @@ Details:
  - TanStack Query: Concept of Queries and Mutation using useQuery() & useMutation()
  - React Redux: Store, Provider, Actions, Dispatch 
  - Collaborative Project using Next.js
+ ________________________________________________________________________________________________
+ 
+
+Date: February 21, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: PostgreSQL & Zustand
+
+Details:
+ - PostgreSQL: Setup and SQL Operations
+ - State management using Zustand
+ - Collaborative Project using Next.js
+ ________________________________________________________________________________________________
