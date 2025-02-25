@@ -21,7 +21,7 @@ export const ProductDetail = () => {
     console.log(error);
     return <p>Error loading products</p>;
   }
-
+  // return <ProductDetailSkeleton />;
   return (
     <>
       {product?.map((product) => (

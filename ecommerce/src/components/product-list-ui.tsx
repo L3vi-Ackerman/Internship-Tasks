@@ -14,7 +14,7 @@ const ProductListUI = ({ searchCategory }: propsInterface) => {
         <div className="hidden categories-list md:block md:items-center md:justify-start md:w-1/5 ">
           <CategoriesList />
         </div>
-        <div className="justify-center w-full flex-col md:w-2/3  items-center p-2">
+        <div className="justify-center w-full flex-col md:w-full  items-center p-2">
           <ProductList searchCategory={searchCategory} />
         </div>
       </div>

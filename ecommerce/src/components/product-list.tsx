@@ -25,12 +25,14 @@ export const ProductList = ({ searchCategory }: productListInterface) => {
     console.log(error);
     return <p>Error loading products</p>;
   }
+
+  // return <ProductListSkeleton />;
   return (
     <>
       <div className={clsx("text-xl font-bold", categoryName && "hidden mb-4")}>
         {categoryName?.toUpperCase()}
       </div>
-      <div>
+      <div className="lg:grid lg:grid-cols-2 ">
         {products?.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

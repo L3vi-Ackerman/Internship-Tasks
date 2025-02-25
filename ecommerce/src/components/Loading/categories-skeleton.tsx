@@ -7,9 +7,9 @@ const CategoriesSkeleton = () => {
       {Array.from({ length: 6 }).map((_, index) => (
         <Card
           key={index}
-          className="w-full flex items-start mb-2 gap-4 h-[50px] bg-white p-2 border-b border-gray-200 rounded-none"
+          className="w-full flex items-start h-[40px] bg-white p-2 border-b border-gray-200 rounded-none"
         >
-          <CardTitle className="animate-pulse bg-gray-200 h-[30px] w-full mb-2 rounded-lg"></CardTitle>
+          <CardTitle className="animate-pulse bg-gray-200 h-[20px] w-full mb-2 rounded-lg"></CardTitle>
         </Card>
       ))}
     </div>

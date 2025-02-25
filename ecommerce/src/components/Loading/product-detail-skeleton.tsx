@@ -4,17 +4,16 @@ import TextSkeleton from "./text-skeleton";
 
 const ProductDetailSkeleton = () => {
   return (
-    <Card className="w-full flex flex-col p-2 md:gap-2 xl:w-3/5 xl:mx-auto">
-      <div className="container w-full flex flex-col md:flex-row md:gap-2 md:h-60">
-        <CardImage className="h-[300px] md:w-1/2 md:h-full bg-gray-200 animate-pulse mb-2 "></CardImage>
-        <TextSkeleton />
-        <div className="card-content mt-4 md:w-1/2 md: gap-2">
+    <Card className="w-full flex flex-col p-2 md:gap-2 md:w-3/5 md:mx-auto gap-4 ">
+      <div className="content lg:flex lg:gap-2">
+        <CardImage className="w-full lg:w-1/2 h-[300px]"></CardImage>
+        <div className="text-container lg:w-1/2 my-2 lg:my-0">
+          <TextSkeleton />
           <TextSkeleton />
         </div>
       </div>
-      <div className="container w-full flex md:gap-2 md:h-40 mt-8 xl:mt-4">
-        <CardImage className="h-[100px] w-full md:h-full bg-gray-200 animate-pulse mb-2 "></CardImage>
-        <TextSkeleton />
+      <div className="review-section">
+        <CardImage className="w-full h-[200px]"></CardImage>
       </div>
     </Card>
   );

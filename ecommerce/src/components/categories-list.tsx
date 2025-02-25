@@ -17,6 +17,7 @@ const CategoriesList = () => {
   if (isLoading) return <CategoriesSkeleton />;
   if (error) return <p>Error loading products</p>;
 
+  // return <CategoriesSkeleton />;
   return (
     <div className="flex flex-col border-gray-200 md:border-r">
       {categories?.map((category: CategoryInterface) => (
