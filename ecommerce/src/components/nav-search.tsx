@@ -6,7 +6,6 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faUser, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import Button from "./ui/button";
 import Link from "next/link";
-import CategoryDropdown from "./dropdown";
 import DropDown from "./dropdown";
 const NavSearchDiv = () => {
   return (

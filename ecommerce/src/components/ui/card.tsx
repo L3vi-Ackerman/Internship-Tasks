@@ -68,12 +68,7 @@ const CardDescription: React.FC<React.HTMLAttributes<HTMLParagraphElement>> = ({
   );
 };
 
-const Card: React.FC<CardProps> = ({
-  className,
-  variant,
-  children,
-  ...props
-}) => {
+const Card: React.FC<CardProps> = ({ className, children, ...props }) => {
   return (
     <div {...props} className={cn("flex rounded-lg font-sans", className)}>
       {children}

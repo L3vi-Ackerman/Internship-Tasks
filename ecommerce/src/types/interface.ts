@@ -18,11 +18,6 @@ export interface ProductInterface {
   thumbnail: string;
 }
 
-interface Dimensions {
-  width: number;
-  height: number;
-  depth: number;
-}
 interface ReviewInterface {
   rating: number;
   comment: string;

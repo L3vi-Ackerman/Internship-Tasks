@@ -1,9 +1,9 @@
-"use client"; // Ensure this is at the very top
+"use client";
 
 import { CategoryInterface } from "@/types/interface";
 import { useCategoryQuery } from "@/shared/queries/categories-query";
 import React from "react";
-import { Card, CardDescription, CardTitle } from "./ui/card";
+import { Card, CardDescription } from "./ui/card";
 import Link from "next/link";
 import CategoriesSkeleton from "./Loading/categories-skeleton";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardDescription, CardImage, CardTitle } from "../ui/card";
+import { Card, CardImage } from "../ui/card";
 import TextSkeleton from "./text-skeleton";
 
 const ProductDetailSkeleton = () => {

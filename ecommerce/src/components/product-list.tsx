@@ -10,8 +10,8 @@ interface productListInterface {
 }
 export const ProductList = ({ searchCategory }: productListInterface) => {
   let categoryName: string | null = null;
+  const params = useParams<{ categoryName: string }>();
   if (searchCategory) {
-    const params = useParams<{ categoryName: string }>();
     categoryName = params.categoryName || null;
   }
   const {
