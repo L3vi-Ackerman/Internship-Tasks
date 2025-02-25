@@ -172,6 +172,18 @@ Training: PostgreSQL & Zustand
 
 Details:
  - PostgreSQL: Setup and SQL Operations
+ - User creation and Management
  - State management using Zustand
- - Collaborative Project using Next.js
+ ________________________________________________________________________________________________
+ 
+Date: February 25, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Postgres JOIN operations and Aggregate functions
+
+Details:
+ - JOIN operations in Postgres: INNER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN, FULL JOIN 
+ - Aggregate Functions in Postgres: BETWEEN, LIKE, GROUP BY
+ - Creation of 'Book Store' database in Postgres
  ________________________________________________________________________________________________
