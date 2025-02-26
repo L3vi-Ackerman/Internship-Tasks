@@ -187,3 +187,15 @@ Details:
  - Aggregate Functions in Postgres: BETWEEN, LIKE, GROUP BY
  - Creation of 'Book Store' database in Postgres
  ________________________________________________________________________________________________
+
+Date: February 26, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Normalization & Denormalization in database 
+
+Details:
+ - Normalization & Denormalization in database
+ - Normalization Forms (NF): 1NF, 2NF, 3NF & BCNF
+ - Purpose and Trade-offs of using normalization and denormalization  
+ ________________________________________________________________________________________________
