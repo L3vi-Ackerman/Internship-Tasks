@@ -198,4 +198,3 @@ Details:
  - Normalization & Denormalization in database
  - Normalization Forms (NF): 1NF, 2NF, 3NF & BCNF
  - Purpose and Trade-offs of using normalization and denormalization  
- ________________________________________________________________________________________________
