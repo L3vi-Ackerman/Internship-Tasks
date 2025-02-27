@@ -198,3 +198,18 @@ Details:
  - Normalization & Denormalization in database
  - Normalization Forms (NF): 1NF, 2NF, 3NF & BCNF
  - Purpose and Trade-offs of using normalization and denormalization  
+__________________________________________________________________________________________________
+
+Date: February 27, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Django and DRF 
+
+Details:
+  - Django Basics and ORM
+  - MVT concept in Django
+  - Serialization and Deserialization
+  - Class Based View and Functional Based View in Django Rest Framework
+__________________________________________________________________________________________________
+
