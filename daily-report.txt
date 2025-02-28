@@ -213,3 +213,16 @@ Details:
   - Class Based View and Functional Based View in Django Rest Framework
 __________________________________________________________________________________________________
 
+Date: February 28, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Django and DRF 
+
+Details:
+  - Django Form Class
+  - Django APIView : mixin, GenericView, compact view
+  - Raw Query
+  - Blog App using Django
+__________________________________________________________________________________________________
+
