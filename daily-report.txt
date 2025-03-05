@@ -226,3 +226,42 @@ Details:
   - Blog App using Django
 __________________________________________________________________________________________________
 
+Date: March 3, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Django Raw Query, Custom User Model 
+
+Details:
+  - Django Templates
+  - Blog App Using Django
+  - Creating Customer User Model using AbstractUser and AbstractBaseUser
+  - Authenticating user in Django 
+__________________________________________________________________________________________________
+
+Date: March 4, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Django RestFramework 
+
+Details:
+  - Serialization 
+  - Class-based and Functional-based Views:@api_view & APIView 
+  - Creating API using generic class-based views
+  - BookStore Project using DRF
+__________________________________________________________________________________________________
+
+Date: March 5, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Django RestFramework 
+
+Details: 
+  - ViewSets 
+  - Generic Class-based Views
+  - Router 
+  - Binding ViewSets to URLs
+__________________________________________________________________________________________________
+
