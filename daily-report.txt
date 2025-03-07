@@ -265,3 +265,16 @@ Details:
   - Binding ViewSets to URLs
 __________________________________________________________________________________________________
 
+Date: March 6, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Git Branching, Django RestFramework ,Next.js 
+
+Details: 
+  - Git Branching Concepts
+  - Router and ViewSet in DRF 
+  - Book Store Project using DRF
+  - Translation in Next.js using u18n
+_________________________________________________________________________________________________
+
