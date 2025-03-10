@@ -48,11 +48,9 @@ class Customer(models.Model):
     def __str__(self):
         return self.user.username
 
-
 class Order(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     order_date = models.DateTimeField(auto_now_add=True)
-    total_price = models.DecimalField(decimal_places=2, max_digits=10)
     status = models.CharField(
         max_length=20,
         choices=[
@@ -64,28 +62,17 @@ class Order(models.Model):
     )
 
     def __str__(self):
-        return f"Order {self.id} by {self.customer.user.username}"
+        return f"Order by {self.customer.user.username}"
 
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name="items")
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField()
-    price = models.DecimalField(decimal_places=2,max_digits=10)
+    price = models.DecimalField(decimal_places=2, max_digits=10)
 
     def __str__(self):
         return f"{self.quantity} x {self.book.title} in Order {self.order.id}"
-
-
-class Review(models.Model):
-    customer = models.ForeignKey(Customer,on_delete=models.CASCADE)
-    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name="reviews")
-    rating = models.IntegerField(choices=[(i, str(i)) for i in range(1, 5)])
-    review_text = models.TextField(blank=True, null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return f"Review by {self.customer.user.username} for {self.book.title}"
 
 
 class InventoryLog(models.Model):
@@ -97,12 +84,24 @@ class InventoryLog(models.Model):
         return f"{self.change} for {self.book.title} at {self.timestamp}"
 
 
-class Cart(models.Model):
+class Review(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
-    quantity = models.PositiveIntegerField(default=1)
+    rating = models.IntegerField()
+    review_text = models.CharField(max_length=255)
+
+class Cart(models.Model):
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     added_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.quantity} x {self.book.title} in {self.customer.user.username}'s cart"
+        return f"Cart {self.id} for {self.customer.user.username}"
 
+
+class CartItem(models.Model):
+    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name="items")
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField()
+
+    def __str__(self):
+        return f"{self.quantity} x {self.book.title} in Cart {self.cart.id}"

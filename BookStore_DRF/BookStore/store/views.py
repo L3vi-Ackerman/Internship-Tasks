@@ -11,12 +11,14 @@ from store.models import (
     Review,
     InventoryLog,
     Cart,
+    CartItem
 )
 from rest_framework.views import APIView
 
 from rest_framework.response import Response
 from store.serializers import (
     AuthorSerializer,
+    CartItemSerializer,
     PublisherSerializer,
     CategorySerializer,
     BookSerializer,
@@ -25,7 +27,8 @@ from store.serializers import (
     OrderItemSerializer,
     InventoryLogSerializer,
     CartSerializer,
-    ReviewSerializer
+    ReviewSerializer,
+    CartItemSerializer
 )
 
 from rest_framework import status
@@ -94,5 +97,8 @@ class CartViewSet(viewsets.ModelViewSet):
     queryset = Cart.objects.all()
     serializer_class = CartSerializer
 
+class CartItemViewSet(viewsets.ModelViewSet):
+    queryset = CartItem.objects.all()
+    serializer_class = CartItemSerializer
 
 
