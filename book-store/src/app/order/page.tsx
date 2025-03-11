@@ -1,5 +1,5 @@
 import React from 'react'
-import {TableComponent} from '@/components/table-component.tsx'
+//import {TableComponent} from '@/components/table-component.tsx'
     
 import {BreadCrumbComponent} from '@/components/bread-crumb.tsx' 
 const OrderPage = () => {
@@ -7,7 +7,6 @@ const OrderPage = () => {
    <>
     <BreadCrumbComponent title ="Orders"/>
 
-   <TableComponent />
     </>
   )
 }

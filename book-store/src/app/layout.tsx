@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import QueryProvider from "@/providers/query-provider.tsx";
+import QueryProvider from "@/providers/query-provider";
 import { AppSidebar } from "@/components/app-sidebar";
 import {
   SidebarInset,
@@ -38,9 +38,7 @@ export default function RootLayout({
         <SidebarProvider>
           <AppSidebar />
           <SidebarInset>
-          <QueryProvider>
-              {children}
-              </QueryProvider>
+            <QueryProvider>{children}</QueryProvider>
           </SidebarInset>
         </SidebarProvider>
       </body>

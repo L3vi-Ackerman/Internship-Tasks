@@ -1,15 +1,14 @@
 export interface BookInterface {
   title:string;
   author:AuthorInterface;
-  publisher:PublisherInterface;
   category:CategoryInterface;
-  publication_date:string;
-  isbn:string;
   price:number;
   stock:number;
 }
 
-
+export interface fetchInterface {
+  url:string;
+}
 export interface AuthorInterface {
   name:string;
   bio:string;
@@ -63,3 +62,5 @@ export interface CartInterface{
   quantity:number;
   added_on:string;
 }
+
+

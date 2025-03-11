@@ -1,5 +1,5 @@
 import React from 'react'
-import {TableComponent} from '@/components/table-component'
+//import {TableComponent} from '@/components/table-component'
 import {BreadCrumbComponent} from '@/components/bread-crumb.tsx' 
 const AuthorPage = () => {
   return (
@@ -7,7 +7,6 @@ const AuthorPage = () => {
     <>
     <BreadCrumbComponent title ="Author"/>
 
-    <TableComponent />
     </>
   )
 }
