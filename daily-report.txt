@@ -278,3 +278,40 @@ Details:
   - Translation in Next.js using u18n
 _________________________________________________________________________________________________
 
+Date: March 7, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Next.js
+
+Details: 
+  - Creation of Book Store UI using Next.js
+  - Next.js middleware
+  - adding server side directive:'use server'
+_________________________________________________________________________________________________
+
+Date: March 10, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Django
+
+Details: 
+  - Admin model customization
+  - JWT in Django
+  - JWT Multivariants
+  - JWT Fragments
+________________________________________________________________________________________________
+
+Date: March 11, 2025
+
+Trainee: Biplav Raj Chitrakar
+
+Training: Django
+
+Details: 
+  - JWT: PyJWT 
+  - JWT Algorithm: HMAC,SHA256,RSASSA
+  - JWT Token Rotations
+________________________________________________________________________________________________
+
