@@ -314,4 +314,26 @@ Details:
   - JWT Algorithm: HMAC,SHA256,RSASSA
   - JWT Token Rotations
 ________________________________________________________________________________________________
+Date: March 12, 2025
 
+Intern: Biplav Raj Chitrakar
+
+Training: Django and Next.js
+
+Details:
+ - i18n in Next.js
+ - not_found page in Next.js
+ - Django RBAC : Groups
+ _______________________________________________________________________________________________
+
+Date: March 14, 2025
+
+Intern: Biplav Raj Chitrakar
+
+Training: Django and Next.js
+
+Details:
+ - Django RBAC : Groups and Permission
+ - Artist Management Project
+ - PyJWT 
+ _______________________________________________________________________________________________
