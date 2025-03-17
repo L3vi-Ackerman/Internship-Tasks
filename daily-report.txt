@@ -337,3 +337,16 @@ Details:
  - Artist Management Project
  - PyJWT 
  _______________________________________________________________________________________________
+
+Date: March 17, 2025
+
+Intern: Biplav Raj Chitrakar
+
+Training: Django 
+
+Details:
+- Created CustomUser with AbstractBaseUser 
+- Created views,serializers for User
+- Implemented jwt in Artist Management System
+
+ _______________________________________________________________________________________________
