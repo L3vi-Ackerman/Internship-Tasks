@@ -350,3 +350,18 @@ Details:
 - Implemented jwt in Artist Management System
 
  _______________________________________________________________________________________________
+
+Date: March 18, 2025
+
+Intern: Biplav Raj Chitrakar
+
+Training: Artist Management System 
+
+Details:
+ - CRUD for user model with raw query
+ - Created models: Profile, Artist & Music
+ - Created views & serializers for Profile model 
+
+_______________________________________________________________________________________________
+
+ 
