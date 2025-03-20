@@ -365,3 +365,29 @@ Details:
 _______________________________________________________________________________________________
 
  
+Date: March 19, 2025
+
+Intern: Biplav Raj Chitrakar
+
+Training: Artist Management System 
+
+Details:
+ - CRUD for artist & profile model with raw query
+ - Created views & serializers for Music model 
+
+_______________________________________________________________________________________________
+ 
+Date: March 20, 2025
+
+Intern: Biplav Raj Chitrakar
+
+Training: Artist Management System 
+
+Details:
+ - CRUD for music model with raw query
+ - Front end setup for AMS
+ - Created login UI
+_______________________________________________________________________________________________
+
+
+
