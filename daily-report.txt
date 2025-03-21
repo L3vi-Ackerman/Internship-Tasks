@@ -389,5 +389,15 @@ Details:
  - Created login UI
 _______________________________________________________________________________________________
 
+Date: March 21, 2025
 
+Intern: Biplav Raj Chitrakar
+
+Training: Artist Management System 
+
+Details:
+ - Refactor Backend code
+ - Tanstack Query: useMutation and useQuery
+ - Dashboard UI
+_______________________________________________________________________________________________
 
