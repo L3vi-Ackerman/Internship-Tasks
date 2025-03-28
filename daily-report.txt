@@ -401,3 +401,28 @@ Details:
  - Dashboard UI
 _______________________________________________________________________________________________
 
+Date: March 27, 2025
+
+Intern: Biplav Raj Chitrakar
+
+Training: Next.js & Django
+
+Details:
+ - SSR Optimization with Next.js and Tanstack Query : queryClient.prefetchQuery()
+ - Hydrating & Dehydrating Data
+ - Request Waterfall in Next.js 
+ - Login implemenation with front end in AMS
+_______________________________________________________________________________________________
+
+Date: March 28, 2025
+
+Intern: Biplav Raj Chitrakar
+
+Training: Artist Management System
+
+Details:
+ - Middleware for login and dashboard page
+ - Sign Up UI
+ - Setup Tanstack Queries
+_______________________________________________________________________________________________
+
